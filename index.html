@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dunia Matematika</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Selamat Datang di Dunia Matematika</h1>
+            <p>Jelajahi keindahan angka, bentuk, dan logika!</p>
+        </header>
+
+        <section class="main-content">
+            <div class="card">
+                <h2>Kalkulator Aritmatika</h2>
+                <div class="calculator">
+                    <input type="text" id="calc-display" disabled>
+                    <div class="button-grid">
+                        <button onclick="appendNumber('7')">7</button>
+                        <button onclick="appendNumber('8')">8</button>
+                        <button onclick="appendNumber('9')">9</button>
+                        <button onclick="appendNumber('/')">÷</button>
+            
+                        <button onclick="appendNumber('4')">4</button>
+                        <button onclick="appendNumber('5')">5</button>
+                        <button onclick="appendNumber('6')">6</button>
+                        <button onclick="appendNumber('*')">×</button>
+            
+                        <button onclick="appendNumber('1')">1</button>
+                        <button onclick="appendNumber('2')">2</button>
+                        <button onclick="appendNumber('3')">3</button>
+                        <button onclick="appendNumber('-')">−</button>
+            
+                        <button onclick="appendNumber('0')">0</button>
+                        <button onclick="clearCalc()">C</button>
+                        <button onclick="deleteLast()">⌫</button>
+                        <button onclick="appendNumber('+')">+</button>
+            
+                        <button class="equal-btn" onclick="calculate()" colspan="4">=</button>
+                    </div>
+                </div>
+            </div>
+            
+            
+
+            <div class="card">
+                <h2>Fakta Menarik tentang Matematika</h2>
+                <div class="fun-fact">
+                    <p id="fact-text">Tahukah kamu? Pi (π) adalah angka yang tidak pernah berakhir!</p>
+                    <button class="new-fact-btn" onclick="generateNewFact()">Fakta Baru</button>
+                </div>
+            </div>
+            
+            
+
+            <div class="card">
+                <h2>Sumber Belajar Matematika</h2>
+                <ul>
+                    <li><a href="pages/aljabar.html">Dasar-Dasar Aljabar</a></li>
+                    <li><a href="pages/geometri.html">Memahami Geometri</a></li>
+                    <li><a href="pages/matriks.html">Memahami Matriks</a></li>
+                </ul>
+                
+                <p id="display-text" class="info-text"></p>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>Naura & Devina XI SIJA A ♡.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
